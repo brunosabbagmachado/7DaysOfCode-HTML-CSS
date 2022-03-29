@@ -1,0 +1,35 @@
+:root {
+    --bg-pagina: #FFFFFF;
+    --nome-empresa: #3A404E;
+    --textos-normais: #667085;
+    --textos-titulos: #101828;
+    --vinho: #8E2424;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-pagina);
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 80px;
+    padding-top: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.cabecalho__logotipo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cabecalho__logotipo___img {
+    padding-right: .5rem;
+}
