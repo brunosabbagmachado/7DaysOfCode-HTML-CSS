@@ -33,3 +33,17 @@ body {
 .cabecalho__logotipo___img {
     padding-right: .5rem;
 }
+
+.cabecalho__logotipo___txt {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.cabecalho__navbar___lista {
+    display: flex;
+    flex-direction: row;
+}
+
+.cabecalho__navbar___itens {
+    padding: 2rem;
+}
