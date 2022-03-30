@@ -1,49 +1,115 @@
 :root {
-    --bg-pagina: #FFFFFF;
-    --nome-empresa: #3A404E;
-    --textos-normais: #667085;
-    --textos-titulos: #101828;
-    --vinho: #8E2424;
+  --bg-pagina: #ffffff;
+  --nome-empresa: #3a404e;
+  --textos-normais: #667085;
+  --textos-titulos: #101828;
+  --vinho: #8e2424;
 }
 
 body {
-    font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
+  background-color: var(--bg-pagina);
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 80px;
+  padding-top: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.navbar__logotipo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbar__logotipo___img {
+  padding-right: 0.5rem;
+}
+
+.navbar__logotipo___txt {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.navbar__lista {
+  display: flex;
+  flex-direction: row;
+  margin-right: 10rem;
+}
+
+.navbar__lista___itens {
+  padding: 2rem;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.navbar__lista___itens a {
+  text-decoration: none;
+  color: var(--textos-normais);
+}
+
+.navbar__botoes {
+    cursor: default;
+}
+
+.navbar__botoes___entrar {
+    text-decoration: none;
+    border: none;
+    color: var(--textos-normais);
     background-color: var(--bg-pagina);
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.navbar__botoes___cadastrar {
+    text-decoration: none;
+    border: none;
+    color: var(--bg-pagina);
+    background-color: var(--vinho);
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 18px;
+    border-radius: 8px;
+    margin-left: 1rem;
+    cursor: pointer;
 }
 
 .cabecalho {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    height: 80px;
-    padding-top: 1rem;
-    padding-right: 1rem;
-    padding-left: 1rem;
+    padding: 96px 0;
+    text-align: center;
 }
 
-.cabecalho__logotipo {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+.cabecalho__span {
+    font-weight: 600;
+    font-style: 16px;
+    color: var(--vinho);
+    margin: 24px 0px;
 }
 
-.cabecalho__logotipo___img {
-    padding-right: .5rem;
+.cabecalho__titulo {
+    margin: 40px 0px;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: -0.02em;
+    color: var(--textos-titulos);
 }
 
-.cabecalho__logotipo___txt {
-    font-weight: 500;
-    font-size: 18px;
-}
+.cabecalho__texto {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--textos-normais);
+    text-align: center;
 
-.cabecalho__navbar___lista {
-    display: flex;
-    flex-direction: row;
-}
-
-.cabecalho__navbar___itens {
-    padding: 2rem;
 }
