@@ -8,8 +8,11 @@
 
 body {
   font-family: "Inter", sans-serif;
+  font-style: normal;
   background-color: var(--bg-pagina);
 }
+
+/*................................................*/
 
 .navbar {
   display: flex;
@@ -57,59 +60,105 @@ body {
 }
 
 .navbar__botoes {
-    cursor: default;
+  cursor: default;
 }
 
 .navbar__botoes___entrar {
-    text-decoration: none;
-    border: none;
-    color: var(--textos-normais);
-    background-color: var(--bg-pagina);
-    font-size: 16px;
-    font-weight: 500;
-    margin-right: 1rem;
-    cursor: pointer;
+  text-decoration: none;
+  border: none;
+  color: var(--textos-normais);
+  background-color: var(--bg-pagina);
+  font-size: 16px;
+  font-weight: 500;
+  margin-right: 1rem;
+  cursor: pointer;
 }
 
 .navbar__botoes___cadastrar {
-    text-decoration: none;
-    border: none;
-    color: var(--bg-pagina);
-    background-color: var(--vinho);
-    font-size: 16px;
-    font-weight: 500;
-    padding: 10px 18px;
-    border-radius: 8px;
-    margin-left: 1rem;
-    cursor: pointer;
+  text-decoration: none;
+  border: none;
+  color: var(--bg-pagina);
+  background-color: var(--vinho);
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 18px;
+  border-radius: 8px;
+  margin-left: 1rem;
+  cursor: pointer;
 }
 
-.cabecalho {
-    padding: 96px 0;
-    text-align: center;
+/*................................................*/
+
+.sobre {
+  padding: 7rem 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
 }
 
-.cabecalho__span {
-    font-weight: 600;
-    font-style: 16px;
-    color: var(--vinho);
-    margin: 24px 0px;
+.sobre__span {
+  font-weight: 600;
+  font-style: 16px;
+  color: var(--vinho);
 }
 
-.cabecalho__titulo {
-    margin: 40px 0px;
-    font-weight: 600;
-    font-size: 48px;
-    line-height: 60px;
-    letter-spacing: -0.02em;
-    color: var(--textos-titulos);
+.sobre__titulo {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 60px;
+  letter-spacing: -0.02em;
+  color: var(--textos-titulos);
 }
 
-.cabecalho__texto {
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 30px;
-    color: var(--textos-normais);
-    text-align: center;
+.sobre__texto {
+  max-width: 50%;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5rem;
+  color: var(--textos-normais);
+  text-align: center;
+}
 
+/*................................................*/
+
+.metricas {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: space-between;
+  grid-column-gap: 50px;
+  padding: 2rem;
+}
+
+.metricas__infos {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-left: 6rem;
+}
+
+.metrica4 {
+  margin-right: 6rem;
+}
+
+.metricas__numero {
+  font-weight: 600;
+  font-size: 60px;
+  color: var(--vinho);
+  line-height: 72px;
+}
+
+.metricas__titulo {
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--textos-titulos);
+  line-height: 28px;
+}
+
+.metricas__texto {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  max-width: 280px;
 }
